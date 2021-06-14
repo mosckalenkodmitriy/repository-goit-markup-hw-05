@@ -50,6 +50,11 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+.modal-text {
+  overflow: auto;
+  width: 90%;
+  height: 80%;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -211,14 +216,14 @@ header {
   color: var(--primary-white-color);
   background-color: var(--primary-blue-color);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   font-weight: bold;
 
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 10px 32px;
 
   transition: background-color 250ms var(--time-function),
     color 250ms var(--time-function);
@@ -253,6 +258,8 @@ header {
   background: rgba(33, 150, 243, 0.9);
   display: inline-block;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   transform: translateY(100%);
   transition: transform 250ms var(--time-function);
@@ -262,22 +269,24 @@ header {
   transform: translateY(0);
 }
 .modal-text {
-  letter-spacing: 0.03em;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.55;
-  color: var(--primary-white-color);
   position: absolute;
   z-index: 2;
   top: 63px;
   left: 24px;
-  width: 322px;
-  height: 168px;
+  width: 94%;
+  height: 80%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   transform: translateY(135%);
   transition: transform 250ms var(--time-function);
+  overflow: auto;
+
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.55;
+  color: var(--primary-white-color);
 }
 .img:hover .modal-text {
   transform: translateY(0);
